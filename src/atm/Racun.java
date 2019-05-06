@@ -54,8 +54,13 @@ public class Racun {
 	}
 
 	public static void ispisSvihRacuna() {
+		if(Racun.racuni.isEmpty()) {
+			System.out.println("Trenutno nema racuna!");
+		}
+		else {
 		for (Racun e : racuni) {
 			System.out.println(e);
+		}
 		}
 	}
 

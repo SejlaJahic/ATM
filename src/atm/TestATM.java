@@ -11,7 +11,8 @@ public class TestATM {
 		while (odabir != 0) {
 			System.out.println("Dobrodošli! " +"\n" +  "\nZa kreiranje raèuna, pritisnite 1"
 					+ "\nZa transfer novca na drugi raèun, pritisnite 2"
-					+ "\nZa pregled postojeæih raèuna, pritisnite 3" + "\nZa pregled transakcija, pritisnite 4"
+					+ "\nZa pregled postojeæih raèuna, pritisnite 3"
+					+ "\nZa pregled transakcija, pritisnite 4"
 					+ "\nZa izlaz iz programa, pritisnite 0");
 			odabir = skener.nextInt();
 			switch (odabir) {
@@ -37,6 +38,7 @@ public class TestATM {
 					iznos = skener.nextDouble();
 				}
 				Racun racun = new Racun(brojRacuna, imeVlasnika, iznos);
+				System.out.println(racun);
 				break;
 
 			case 2:

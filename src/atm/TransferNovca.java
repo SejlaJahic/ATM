@@ -60,8 +60,12 @@ public class TransferNovca {
 	}
 
 	public static void ispisSvihTransakcija() {
+		if(TransferNovca.transferi.isEmpty()) {
+			System.out.println("Trenutno nema transakcija.");
+		}else {
 		for (TransferNovca e : transferi) {
 			System.out.println(e);
+		}
 		}
 
 	}
